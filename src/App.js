@@ -3,7 +3,8 @@ import '@fontsource/poppins/400.css';
 import '@fontsource/poppins/600.css';
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import Typography from '@mui/material/Typography';
+
+import Headers from './shared/Headers';
 
 const App = () => {
   const theme = createTheme({
@@ -14,7 +15,7 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Typography variant="h1">Headers!</Typography>
+      <Headers />
     </ThemeProvider>
   );
 };
