@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+/* Override Bootstrap Styling */
+
+.btn-primary {
+  background-color: #025fce !important;
+}
