@@ -71,24 +71,32 @@ const Headers = () => {
           <Image src={companyLogo} style={{ width: '60%' }} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse
-          id="navbarScroll"
-          className="justify-content-end align-items-center"
-        >
-          <Navbar.Text>
-            <Nav
-              className="me-auto my-2 my-lg-0"
-              style={{ maxHeight: '100px', alignItems: 'center' }}
-              navbarScroll
-            >
-              <Nav.Link>Micro-fulfillment</Nav.Link>
-              <Nav.Link>Robotic Warehouse</Nav.Link>
-              <Nav.Link>About Us</Nav.Link>
-              <Nav.Link>
-                <Button>Let's Talk</Button>
-              </Nav.Link>
-            </Nav>
-          </Navbar.Text>
+        <Navbar.Collapse id="navbarScroll" className="justify-content-end">
+          <Nav
+            className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: '100px' }}
+            navbarScroll
+          >
+            <NavDropdown title="Micro-fulfillment" id="nav-dropdown">
+              <NavDropdown.Item>
+                <Link to="/grocery">Grocery</Link>
+              </NavDropdown.Item>
+
+              <NavDropdown.Item>
+                <Link to="/ecommerce">E-Commerce</Link>
+              </NavDropdown.Item>
+            </NavDropdown>
+
+            <Nav.Link>
+              <Link to="/warehouse">Robotic Warehouse</Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link to="/team">About Us</Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Button>Let's Talk</Button>
+            </Nav.Link>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
