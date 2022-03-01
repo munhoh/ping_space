@@ -78,13 +78,13 @@ const Headers = () => {
             navbarScroll
           >
             <NavDropdown title="Micro-fulfillment" id="nav-dropdown">
-              <NavDropdown.Item>
-                <Link to="/grocery">Grocery</Link>
-              </NavDropdown.Item>
+              <Link to="/grocery" className="dropdown-item">
+                Grocery
+              </Link>
 
-              <NavDropdown.Item>
-                <Link to="/ecommerce">E-Commerce</Link>
-              </NavDropdown.Item>
+              <Link to="/ecommerce" className="dropdown-item">
+                E-Commerce
+              </Link>
             </NavDropdown>
 
             <Nav.Link>
