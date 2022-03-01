@@ -12,15 +12,6 @@ import styles from './NavBar.module.css';
 import companyLogo from './resource/PingSpaceLogo.png';
 // import { left } from '@popperjs/core';
 
-const pages = [
-  'Micro-fulfillment',
-  'Robotics Warehouse',
-  'About Us',
-  "Let's Talk",
-];
-const subpages = ['Grocery', 'E-Commerce'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
-
 // const BootstrapButton = styled(Button)({
 //   boxShadow: 'none',
 //   textTransform: 'none',
