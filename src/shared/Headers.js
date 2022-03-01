@@ -68,7 +68,9 @@ const Headers = () => {
     <Navbar bg="light" expand="lg">
       <Container fluid>
         <Navbar.Brand>
-          <Image src={companyLogo} style={{ width: '60%' }} />
+          <Link to="/">
+            <Image src={companyLogo} style={{ width: '60%' }} />
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll" className="justify-content-end">
