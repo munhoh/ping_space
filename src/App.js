@@ -8,6 +8,7 @@ import Headers from './shared/Headers';
 import LandingPage from './pages/LandingPage';
 import RoboticWarehouse from './pages/RoboticWarehouse';
 import AboutUs from './pages/AboutUs';
+import ContactForm from './pages/ContactForm';
 import Grocery from './pages/Microfulfillment/Grocery';
 import Ecommerce from './pages/Microfulfillment/Ecommerce';
 
@@ -21,6 +22,7 @@ const App = () => {
         <Route exact path="/ecommerce" element={<Ecommerce />} />
         <Route exact path="/warehouse" element={<RoboticWarehouse />} />
         <Route exact path="/team" element={<AboutUs />} />
+        <Route exact path="/contact-us" element={<ContactForm />} />
       </Routes>
     </BrowserRouter>
   );

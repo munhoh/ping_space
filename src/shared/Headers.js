@@ -87,7 +87,9 @@ const Headers = () => {
               <Link to="/team">About Us</Link>
             </Nav.Link>
             <Nav.Link>
-              <Button>Let's Talk</Button>
+              <Link to="/contact-us">
+                <Button>Let's Talk</Button>
+              </Link>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
