@@ -67,7 +67,7 @@ const Headers = () => {
   return (
     <Navbar bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#">
+        <Navbar.Brand>
           <Image src={companyLogo} style={{ width: '60%' }} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -81,10 +81,10 @@ const Headers = () => {
               style={{ maxHeight: '100px', alignItems: 'center' }}
               navbarScroll
             >
-              <Nav.Link href="#action1">Micro-fulfillment</Nav.Link>
-              <Nav.Link href="#action2">Robotic Warehouse</Nav.Link>
-              <Nav.Link href="#action3">About Us</Nav.Link>
-              <Nav.Link href="#action3">
+              <Nav.Link>Micro-fulfillment</Nav.Link>
+              <Nav.Link>Robotic Warehouse</Nav.Link>
+              <Nav.Link>About Us</Nav.Link>
+              <Nav.Link>
                 <Button>Let's Talk</Button>
               </Nav.Link>
             </Nav>
