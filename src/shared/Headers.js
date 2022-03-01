@@ -56,7 +56,7 @@ const Headers = () => {
   const toggleOpen = () => setIsOpen(!isOpen);
 
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="md">
       <Container fluid>
         <Navbar.Brand>
           <Link to="/">
@@ -65,33 +65,45 @@ const Headers = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll" className="justify-content-end">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-            navbarScroll
-          >
-            <NavDropdown title="Micro-fulfillment" id="nav-dropdown">
-              <Link to="/grocery" className="dropdown-item">
-                Grocery
-              </Link>
+          <div className="d-flex">
+            <Nav
+              className="align-items-center me-auto my-2 my-lg-0"
+              style={{ maxHeight: '100px' }}
+              navbarScroll
+            >
+              <Navbar.Text>
+                <NavDropdown title="Micro-fulfillment">
+                  <Link to="/grocery" className="dropdown-item">
+                    Grocery
+                  </Link>
 
-              <Link to="/ecommerce" className="dropdown-item">
-                E-Commerce
-              </Link>
-            </NavDropdown>
+                  <Link to="/ecommerce" className="dropdown-item">
+                    E-Commerce
+                  </Link>
+                </NavDropdown>
+              </Navbar.Text>
 
-            <Nav.Link>
-              <Link to="/warehouse">Robotic Warehouse</Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link to="/team">About Us</Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link to="/contact-us">
-                <Button>Let's Talk</Button>
-              </Link>
-            </Nav.Link>
-          </Nav>
+              <Navbar.Text>
+                <Nav.Link as="li">
+                  <Link to="/warehouse">Robotic Warehouse</Link>
+                </Nav.Link>
+              </Navbar.Text>
+
+              <Navbar.Text>
+                <Nav.Link as="li">
+                  <Link to="/team">About Us</Link>
+                </Nav.Link>
+              </Navbar.Text>
+
+              <Navbar.Text>
+                <Nav.Link as="li">
+                  <Link to="/contact-us">
+                    <Button>Let's Talk</Button>
+                  </Link>
+                </Nav.Link>
+              </Navbar.Text>
+            </Nav>
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>
