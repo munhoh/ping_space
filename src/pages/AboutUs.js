@@ -28,7 +28,7 @@ const SelectCountry = () => (
 );
 
 const AboutUs = () => (
-  <Container style={{ paddingTop: '3em' }}>
+  <Container style={{ paddingTop: '2em' }}>
     <Row className="justify-content-md-center">
       <Col xs lg="6">
         <h4 className="text-center">Let's Get In Touch</h4>
@@ -41,37 +41,49 @@ const AboutUs = () => (
             <Form.Control type="email" placeholder="name@example.com" />
           </FloatingLabel>
 
-          <FloatingLabel
-            controlId="floatingInput"
-            label="First Name"
-            className="mb-3"
-          >
-            <Form.Control type="text" placeholder="name@example.com" />
-          </FloatingLabel>
+          <Row>
+            <Col>
+              <FloatingLabel
+                controlId="floatingInput"
+                label="First Name"
+                className="mb-3"
+              >
+                <Form.Control type="text" placeholder="name@example.com" />
+              </FloatingLabel>
+            </Col>
 
-          <FloatingLabel
-            controlId="floatingInput"
-            label="Last Name"
-            className="mb-3"
-          >
-            <Form.Control type="text" placeholder="name@example.com" />
-          </FloatingLabel>
+            <Col>
+              <FloatingLabel
+                controlId="floatingInput"
+                label="Last Name"
+                className="mb-3"
+              >
+                <Form.Control type="text" placeholder="name@example.com" />
+              </FloatingLabel>
+            </Col>
+          </Row>
 
-          <FloatingLabel
-            controlId="floatingInput"
-            label="Industry"
-            className="mb-3"
-          >
-            <SelectIndustry />
-          </FloatingLabel>
+          <Row>
+            <Col>
+              <FloatingLabel
+                controlId="floatingInput"
+                label="Industry"
+                className="mb-3"
+              >
+                <SelectIndustry />
+              </FloatingLabel>
+            </Col>
 
-          <FloatingLabel
-            controlId="floatingInput"
-            label="Country"
-            className="mb-3"
-          >
-            <SelectCountry />
-          </FloatingLabel>
+            <Col>
+              <FloatingLabel
+                controlId="floatingInput"
+                label="Country"
+                className="mb-3"
+              >
+                <SelectCountry />
+              </FloatingLabel>
+            </Col>
+          </Row>
 
           <FloatingLabel
             controlId="floatingInput"
@@ -89,9 +101,11 @@ const AboutUs = () => (
             />
           </FloatingLabel>
 
-          <Button variant="primary" type="submit">
-            Submit
-          </Button>
+          <div className="mt-3 text-center">
+            <Button variant="primary" type="submit">
+              Submit
+            </Button>
+          </div>
         </Form>
       </Col>
     </Row>
